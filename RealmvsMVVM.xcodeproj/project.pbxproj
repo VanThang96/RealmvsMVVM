@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2339ED78225472950058EC09 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2339ED77225472950058EC09 /* Item.swift */; };
 		23458F7C22544AE90066126E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23458F7B22544AE90066126E /* AppDelegate.swift */; };
 		23458F7E22544AE90066126E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23458F7D22544AE90066126E /* ViewController.swift */; };
 		23458F8122544AE90066126E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23458F7F22544AE90066126E /* Main.storyboard */; };
 		23458F8322544AEA0066126E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23458F8222544AEA0066126E /* Assets.xcassets */; };
 		23458F8622544AEA0066126E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23458F8422544AEA0066126E /* LaunchScreen.storyboard */; };
+		23A9BB552257475A00FA25FE /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A9BB542257475A00FA25FE /* ItemViewModel.swift */; };
+		23C794222254A54B00801790 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C794212254A54B00801790 /* TableViewCell.swift */; };
+		51CDC3B2D51E6692B9F1FF60 /* Pods_RealmvsMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AE9C425AAF08DFCE24BD70 /* Pods_RealmvsMVVM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09AE9C425AAF08DFCE24BD70 /* Pods_RealmvsMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmvsMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D3C8F365F8376A5679A145B /* Pods-RealmvsMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmvsMVVM.release.xcconfig"; path = "Target Support Files/Pods-RealmvsMVVM/Pods-RealmvsMVVM.release.xcconfig"; sourceTree = "<group>"; };
+		2339ED77225472950058EC09 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		23458F7822544AE90066126E /* RealmvsMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmvsMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23458F7B22544AE90066126E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23458F7D22544AE90066126E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,9 @@
 		23458F8222544AEA0066126E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23458F8522544AEA0066126E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23458F8722544AEA0066126E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23A9BB542257475A00FA25FE /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
+		23C794212254A54B00801790 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		D54013CAFF870F68DA054B98 /* Pods-RealmvsMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmvsMVVM.debug.xcconfig"; path = "Target Support Files/Pods-RealmvsMVVM/Pods-RealmvsMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51CDC3B2D51E6692B9F1FF60 /* Pods_RealmvsMVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				23458F7A22544AE90066126E /* RealmvsMVVM */,
 				23458F7922544AE90066126E /* Products */,
+				856F3BF69F4F6F37597EE3D3 /* Pods */,
+				CCFB996831A7C5F2CE3DAEDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +67,66 @@
 		23458F7A22544AE90066126E /* RealmvsMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				23458F7B22544AE90066126E /* AppDelegate.swift */,
-				23458F7D22544AE90066126E /* ViewController.swift */,
+				23A9BB5B22575B8400FA25FE /* ViewController */,
+				23A9BB5A22575B5B00FA25FE /* Cell */,
+				23A9BB5922575B3A00FA25FE /* Model */,
+				23A9BB5622575A9A00FA25FE /* ViewModel */,
 				23458F7F22544AE90066126E /* Main.storyboard */,
 				23458F8222544AEA0066126E /* Assets.xcassets */,
 				23458F8422544AEA0066126E /* LaunchScreen.storyboard */,
 				23458F8722544AEA0066126E /* Info.plist */,
 			);
 			path = RealmvsMVVM;
+			sourceTree = "<group>";
+		};
+		23A9BB5622575A9A00FA25FE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				23A9BB542257475A00FA25FE /* ItemViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		23A9BB5922575B3A00FA25FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2339ED77225472950058EC09 /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		23A9BB5A22575B5B00FA25FE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				23C794212254A54B00801790 /* TableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		23A9BB5B22575B8400FA25FE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				23458F7B22544AE90066126E /* AppDelegate.swift */,
+				23458F7D22544AE90066126E /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		856F3BF69F4F6F37597EE3D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D54013CAFF870F68DA054B98 /* Pods-RealmvsMVVM.debug.xcconfig */,
+				1D3C8F365F8376A5679A145B /* Pods-RealmvsMVVM.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CCFB996831A7C5F2CE3DAEDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09AE9C425AAF08DFCE24BD70 /* Pods_RealmvsMVVM.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23458F8A22544AEA0066126E /* Build configuration list for PBXNativeTarget "RealmvsMVVM" */;
 			buildPhases = (
+				DDDCCFFF4002F0095D4B46A0 /* [CP] Check Pods Manifest.lock */,
 				23458F7422544AE90066126E /* Sources */,
 				23458F7522544AE90066126E /* Frameworks */,
 				23458F7622544AE90066126E /* Resources */,
+				3E340308480C9E5370B89F94 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +197,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E340308480C9E5370B89F94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealmvsMVVM/Pods-RealmvsMVVM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RealmvsMVVM/Pods-RealmvsMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDDCCFFF4002F0095D4B46A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealmvsMVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		23458F7422544AE90066126E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				23458F7E22544AE90066126E /* ViewController.swift in Sources */,
+				23C794222254A54B00801790 /* TableViewCell.swift in Sources */,
+				2339ED78225472950058EC09 /* Item.swift in Sources */,
+				23A9BB552257475A00FA25FE /* ItemViewModel.swift in Sources */,
 				23458F7C22544AE90066126E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +405,7 @@
 		};
 		23458F8B22544AEA0066126E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D54013CAFF870F68DA054B98 /* Pods-RealmvsMVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +424,7 @@
 		};
 		23458F8C22544AEA0066126E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D3C8F365F8376A5679A145B /* Pods-RealmvsMVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
